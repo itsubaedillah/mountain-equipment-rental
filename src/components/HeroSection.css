@@ -1,0 +1,33 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/assets/mountain.jpg'); /* ganti sesuai gambar kamu */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero-button:hover {
+  background-color: #ff5722;
+}
