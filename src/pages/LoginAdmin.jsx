@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Auth.css";
 
 export default function LoginAdmin() {
@@ -14,6 +15,10 @@ export default function LoginAdmin() {
           <input type="password" placeholder="Masukkan password" />
 
           <button type="submit">Login</button>
+
+          <div className="auth-footer">
+          Belum punya akun? <Link to="/admin-register">Daftar di sini</Link>
+        </div>
         </form>
       </div>
     </div>
