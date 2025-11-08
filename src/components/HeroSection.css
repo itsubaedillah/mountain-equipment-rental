@@ -1,33 +1,52 @@
 .hero {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url('/src/assets/mountain.jpg'); /* ganti sesuai gambar kamu */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
+/* Container untuk semua gambar */
+.hero-slider {
+  display: flex;
+  width: 400%; /* karena 3 gambar + 1 duplikat */
+  height: 100%;
+}
+
+/* Tiap gambar */
+.slide {
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay gelap agar teks terlihat */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+/* Konten teks */
 .hero-content {
+  position: absolute;
+  z-index: 3;
   text-align: center;
   color: white;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.hero-button {
-  background-color: #ff7043;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero-button:hover {
-  background-color: #ff5722;
+.hero-content p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
