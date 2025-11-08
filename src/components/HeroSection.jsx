@@ -7,7 +7,6 @@ export default function HeroSection() {
       <div className="hero-content">
         <h1>Sewa Peralatan Gunung!</h1>
         <p>Semua perlengkapan outdoor untuk pendakian dan camping ada di sini.</p>
-        <button className="hero-button">Sewa Sekarang</button>
       </div>
     </section>
   );
